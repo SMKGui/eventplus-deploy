@@ -40,13 +40,14 @@ export const institutionResource = '/Instituicao';
  */
 export const loginResource = '/Login';
 
-const apiPort = '5000';
-const localApiUri = `http://localhost:${apiPort}/api`;
-const externallApiUri = ``;
+//const apiPort = '5000';
+//const localApiUri = `http://localhost:${apiPort}/api`;
+const externallApiUri = `https://webapieventguiluiz.azurewebsites.net/index.html`;
 // const externalApiUri = null;
 
 const api = axios.create({
-    baseURL: localApiUri
+    //baseURL: localApiUri
+    baseURL: externallApiUri
 });
 
 
